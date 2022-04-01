@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+    <%- include('./partials/header.ejs') %> 
+
+    <div class="new">
+        <a href="/new">New Message</a>
+    </div>
+
+    <div class="messages">
+
+        <% messages.forEach(msg => { %>
+            <% const dt = `${msg.added.getDate()}-${msg.added.getMonth() + 1}-${msg.added.getFullYear()}` %> 
+
+           <div class="msg">
+            <h2><%= msg.user %></h2>
+            <p><%= dt %></p>
+            <p class="msg-text"><%= msg.text %></p>
+           </div>
+        <%  }); %> 
+        
+      
+    </div>
+
+ 
+</body>
+</html>
