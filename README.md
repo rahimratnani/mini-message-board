@@ -1,3 +1,3 @@
 # Mini Message Board
 
-**Deployed at:** https://shielded-harbor-37531.herokuapp.com/
+**Deployed at:** https://mini-message-board-wpzo.onrender.com/
